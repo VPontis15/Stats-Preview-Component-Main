@@ -144,7 +144,7 @@ ul li {
 
 .card__content-heading {
   font-size: 1.75rem;
-  font-family: var(--ff-accent);
+  font-family: var(--clr-accent);
   font-weight: 700;
   line-height: 1.1;
 }
