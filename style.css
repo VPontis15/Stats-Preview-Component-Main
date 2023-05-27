@@ -81,7 +81,7 @@ h6 {
   --clr-main-headings: hsl(0, 0%, 100%);
   --clr-main-paragraph: hsla(0, 0%, 100%, 0.75);
   -clr-stats-headings: hsla(0, 0%, 100%, 0.6);
-
+  --clr-image-overlay: hsl(278, 67%, 43%);
   /* Font Sizes */
   --fs-main: 0.9375rem;
 
@@ -94,10 +94,29 @@ body {
   font-size: var(--fs-main);
   font-family: var(--ff-main);
   color: var(--clr-main-paragraph);
+  line-height: 1.6;
 }
 
 ul li {
   list-style: none;
+}
+
+.card__image {
+  position: relative;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0.6;
+  inset: 0;
+  background-color: var(--clr-image-overlay);
 }
 
 .container {
@@ -114,4 +133,39 @@ ul li {
   margin: 1.5rem;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.card__content {
+  padding: 1.75em;
+  display: grid;
+  gap: 1.125rem;
+  text-align: center;
+}
+
+.card__content-heading {
+  font-size: 1.75rem;
+  font-family: var(--ff-accent);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.card__content-heading span {
+  color: var(--clr-accent);
+}
+
+.card__content-paragraph {
+  max-width: 30ch;
+  justify-self: center;
+}
+
+.stats__heading {
+  font-size: 1.5rem;
+  color: var(--clr-main-headings);
+  font-weight: 700;
+}
+
+.stats__context {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
