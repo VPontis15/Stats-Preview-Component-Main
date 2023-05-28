@@ -3,6 +3,11 @@ A Frontend Mentor Challenge
 
 Challenge link: https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62
 
+
+Live site: https://vpontis15.github.io/Stats-Preview-Component-Main/
+
+
+
 Desktop Preview:
 
 
