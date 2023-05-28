@@ -133,6 +133,7 @@ ul li {
   border-radius: 0.625rem;
   overflow: hidden;
   max-width: min(100%, 1100px);
+  gap: 1rem;
 }
 
 .card__content {
@@ -140,14 +141,14 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1.125rem;
+  gap: 2.5rem;
   text-align: center;
 }
 
 .card-text-wrapper {
   display: grid;
   place-content: center;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .card__content-heading {
@@ -165,7 +166,6 @@ ul li {
 
 .card__content-paragraph {
   max-width: 30ch;
-
   justify-self: center;
 }
 
