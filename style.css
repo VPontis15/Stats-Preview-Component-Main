@@ -116,6 +116,7 @@ ul li {
   opacity: 0.6;
   inset: 0;
   background-color: var(--clr-image-overlay);
+  mix-blend-mode: multiply;
 }
 
 .container {
