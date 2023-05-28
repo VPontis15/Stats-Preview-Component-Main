@@ -178,7 +178,7 @@ ul li {
 .stats__context {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: clamp(12px, 2.5vw, 16px);
+  font-size: clamp(12px, 1.5vw, 14px);
 }
 
 @media (min-width: 900px) {
@@ -204,5 +204,23 @@ ul li {
   }
   .flex-box {
     flex-direction: row;
+    justify-content: space-between;
   }
+}
+
+@media (min-width: 465px) and (max-width: 900px) {
+  .card {
+    max-width: 400px;
+    flex-direction: row;
+    flex-direction: column-reverse;
+  }
+  .flex-box {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+
+  /* .card__content-paragraph {
+    max-width: 100%;
+  } */
 }
