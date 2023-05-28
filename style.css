@@ -91,7 +91,7 @@ h6 {
 }
 
 body {
-  font-size: clamp(var(--fs-main), 1.5vw, 18px);
+  font-size: clamp(var(--fs-main), 1.5vw, 1.125rem);
   font-family: var(--ff-main);
   color: var(--clr-main-paragraph);
   line-height: 1.6;
@@ -130,7 +130,7 @@ ul li {
   display: flex;
   flex-direction: column-reverse;
   margin: 1.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   overflow: hidden;
   max-width: min(100%, 1100px);
 }
@@ -156,6 +156,7 @@ ul li {
   font-weight: 700;
   line-height: 1.1;
   max-width: 30ch;
+  color: var(--clr-main-headings);
 }
 
 .card__content-heading span {
@@ -177,10 +178,12 @@ ul li {
 .stats__context {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: clamp(12px, 1.5vw, 14px);
+  font-size: clamp(0.75rem, 1.5vw, 14px);
 }
 
-@media (min-width: 900px) {
+/*  max-width: 900px */
+
+@media (min-width: 56.25em) {
   * {
     margin: 0;
     padding: 0;
@@ -207,7 +210,9 @@ ul li {
   }
 }
 
-@media (min-width: 465px) and (max-width: 900px) {
+/* min-width: 465px, max-width: 900px */
+
+@media (min-width: 29.0625em) and (max-width: 56.25em) {
   .card {
     max-width: 400px;
     flex-direction: row;
