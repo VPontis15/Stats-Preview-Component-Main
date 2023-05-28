@@ -3,7 +3,7 @@ A Frontend Mentor Challenge
 
 Challenge link: https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62
 
-Desktop Preview
+Desktop Preview:
 
 
 
